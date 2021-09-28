@@ -27,17 +27,7 @@ function echonl() {
 function echocr() {
 	echo -e -n "\r"
 }
-#export PS1="\n\[$(tput bold)\]\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;14m\]\`__git_ps1 \" %s\"\`\[$(tput sgr0)\]\n❱ \[$(tput sgr0)\]"
-#export PS1="\n\[\033[38;5;241m\]$(printf "\\u00B7%.0s" $(seq 21 $(tput cols))) \[$(tput bold)\]\[\033[38;5;218m\]\d \[\033[38;5;212m\]\t\r\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;14m\]\`__git_ps1 \" %s\"\` \[$(tput sgr0)\]\n❱ \[$(tput sgr0)\]"
-#export PS1="\n\[\033[38;5;241m\]\`printf \"\\u00B7%.0s\" \\\`seq 21 \\\\\\\`tput cols\\\\\\\`\\\`\` \[$(tput bold)\]\[\033[38;5;218m\]\d \[\033[38;5;212m\]\t\r\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;14m\]\`__git_ps1 \" %s\"\` \[$(tput sgr0)\]\n❱ \[$(tput sgr0)\]"
-#export PS1="\012\[\033[38;5;241m\]"'$(printf "\u00B7%.0s" $(seq 21 $(tput cols)))'" \[$(tput bold)\]\[\033[38;5;218m\]\d \[\033[38;5;212m\]\t\015\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;14m\]"'$(__git_ps1 " %s")'" \[$(tput sgr0)\]\012❱ \[$(tput sgr0)\]"
-#export PS1="\012\[\033[38;5;241m\]"'$(printf "\\u00B7%.0s" $(seq 21 $(tput cols)))'" \[$(tput bold)\]\[\033[38;5;218m\]\d \[\033[38;5;212m\]\t$(echo $'\r')"
-#export PA="\012\[\033[38;5;241m\]"'$(printf "\\u00B7%.0s" $(seq 21 $(tput cols)))'" \[$(tput bold)\]\[\033[38;5;218m\]\d \[\033[38;5;212m\]\t"
-#export PB="\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;14m\]"'$(__git_ps1 " %s")'" \[$(tput sgr0)\]\012❱ \[$(tput sgr0)\]"
-#export PS1="$PA"'$(echo $''\r'')'"$PB"
-#export PS1='$(echo test)\n'
 export PS1="\[$(tput sgr0)\]\012\[\033[38;5;241m\]"'$(printf "\\u00B7%.0s" $(seq 21 $(tput cols)))'" \[$(tput bold)\]\[\033[38;5;218m\]\d \[\033[38;5;212m\]\t"'$(echocr)'"\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;14m\]"'$(__git_ps1 " %s")'" \[$(tput sgr0)\]\012❱ \[$(tput sgr0)\]"
-#export PS1="$(echonl)\[\033[38;5;241m\]"'$(printf "\\u00B7%.0s" $(seq 21 $(tput cols)))'" \[$(tput bold)\]\[\033[38;5;218m\]\d \[\033[38;5;212m\]\t"'$(echocr)'"\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;14m\]"'$(__git_ps1 " %s")'" \[$(tput sgr0)\]$(echonl)❱ \[$(tput sgr0)\]"
 # https://github.com/git-for-windows/git/issues/3303
 
 # Aliases
