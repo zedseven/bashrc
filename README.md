@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 My personal `.bashrc` file. Makes the terminal look comfortable, and provides a
-number of bash aliases mainly focused around Rust and its associated tools.
+number of Bash aliases mainly focused around Rust and its associated tools.
 
 ## Terminal
 ![A screenshot of how the terminal looks with the modifications made by this file](Terminal.png)
