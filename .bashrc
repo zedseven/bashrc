@@ -42,6 +42,7 @@ alias gc='g commit -S -m'
 alias gs='g status'
 alias gp='g push'
 alias gpu='g push --set-upstream'
+alias gu='g pull'
 alias gl='g last' # last = log -1 HEAD
 alias gr='g reset'
 alias grao='g remote add origin'
