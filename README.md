@@ -44,6 +44,8 @@ and Rust tools
 - [cargo-generate](https://github.com/cargo-generate/cargo-generate)
 - [cargo-expand](https://github.com/dtolnay/cargo-expand)
 - [cargo-nono](https://github.com/hobofan/cargo-nono)
+- [cargo-license](https://github.com/onur/cargo-license)
+- [cargo-outdated](https://github.com/kbknapp/cargo-outdated)
 
 ## Environment
 Currently (as of 2021-11-06) used with [Git For Windows](https://gitforwindows.org/),

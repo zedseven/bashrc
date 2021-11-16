@@ -76,3 +76,8 @@ alias cddar='c doc --all-features --release'
 alias cddas='c doc --all-features && file-server -p 6969 ./target/doc'
 alias cddars='c doc --all-features --release && file-server -p 6969 ./target/doc'
 alias ce='c expand --color=always --theme=OneHalfDark'
+alias cql='c license --color=always'
+alias cqla='c license --color=always --authors'
+alias cqo='c outdated --color=always --root-deps-only'
+alias cqof='c outdated --color=always' # Full
+alias cqu='c update --color=always'
