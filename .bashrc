@@ -1,3 +1,13 @@
+# Bash Options
+shopt -s histappend
+shopt -s checkwinsize
+HISTCONTROL=ignoreboth
+HISTSIZE=1000
+HISTFILESIZE=100000
+
+# Load Cargo environment variables
+. "$HOME/.cargo/env"
+
 # Prepare the __git_ps1 command for use in PS1
 GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
 COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
