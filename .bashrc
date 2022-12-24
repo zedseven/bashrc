@@ -4,6 +4,7 @@ shopt -s checkwinsize
 HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=100000
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND" # Makes writing to history immediate, so nothing is lost if a shell is killed without a proper `exit` - https://askubuntu.com/questions/67283/is-it-possible-to-make-writing-to-bash-history-immediate
 
 # Prepare the __git_ps1 command for use in PS1
 GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
@@ -46,11 +47,12 @@ alias ll='ls -la'
 alias g='git'
 alias ga='g add'
 alias gc='g commit -S -m'
+alias ge='g checkout'
 alias gs='g status'
 alias gp='g push'
 alias gpu='g push --set-upstream'
 alias gu='g pull'
-alias gl='g last' # last = log -1 HEAD
+alias gl='g log --show-signature'
 alias gr='g reset'
 alias grao='g remote add origin'
 alias go='g clone'
