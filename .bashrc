@@ -98,3 +98,6 @@ alias ll='ls -la'
 alias ls='ls -hc --color=always'
 alias rg='rg --pretty --smart-case --stats'
 alias w='clear' # Think of it as "wipe" for wiping the screen clear
+
+# For some reason on Windows, sometimes this setting gets wiped out for no good reason
+git config --global core.excludesFile "$HOME/.gitignore"
